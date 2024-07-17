@@ -1,0 +1,35 @@
+/* Reset CSS */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --primary-color: #EE4D2D;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --star-gold-color: #FFCE3E;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* Ví dụ, nếu bạn đặt kích thước font chữ của phần tử gốc (thường là <html>) là 16px, 
+và bạn sử dụng 1rem trong CSS của bạn, thì 1rem sẽ tương đương với 16px. 
+Nếu bạn muốn sử dụng 2rem, nó sẽ tương đương với 32px, và như vậy. 
+Đặt 62.5% -> 1rem = 10px*/
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

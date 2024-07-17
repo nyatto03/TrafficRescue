@@ -1,0 +1,631 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 46px; */
+    background-color: #f8f8f8;
+    /* Màu nền cho header */
+    text-align: center;
+    /* Căn giữa nội dung trong header */
+    z-index: 1;
+    padding: 10px 0;
+    margin-bottom: 76px;
+}
+
+.nav {
+    list-style-type: none;
+    /* Loại bỏ ký hiệu trước các thẻ <li> */
+    height: 46px;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    /* Sử dụng Flexbox để các thẻ <li> nằm ngang */
+    justify-content: center;
+    /* Căn giữa các thẻ <li> */
+    align-items: center;
+}
+
+.nav li {
+    margin: 0 15px;
+    /* Khoảng cách giữa các thẻ <li> */
+}
+
+.nav li a {
+    text-decoration: none;
+    /* Loại bỏ gạch chân của các liên kết */
+    color: #333;
+    /* Màu chữ của các liên kết */
+    padding: 10px 20px;
+    /* Khoảng cách bên trong cho các liên kết */
+    border-radius: 5px;
+    /* Bo tròn các góc */
+    transition: background-color 0.3s;
+    /* Hiệu ứng chuyển đổi màu nền */
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.nav li a:hover {
+    background-color: #ddd;
+    /* Màu nền khi rê chuột lên các liên kết */
+}
+
+.nav .active a {
+    background-color: #FFCE3E;
+    /* Màu nền cho liên kết đang được kích hoạt */
+    color: #fff;
+    /* Màu chữ cho liên kết đang được kích hoạt */
+}
+
+.nav .active a:hover{
+    background-color: #FFCE3E;
+    /* Màu nền cho liên kết đang được kích hoạt */
+    color: #fff;
+    /* Màu chữ cho liên kết đang được kích hoạt */
+}
+
+
+
+.home {
+    position: relative;
+    margin-top: 76px;
+    /* padding-top: 50%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 120px 150px 80px;
+}
+
+.home .content .text-content {
+    padding: 20px;
+}
+
+.home .content .text-content .text-heading {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+.home .content .text-content .text-description {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+}
+
+.call-button {
+    background-color: #eb2c2c;
+    /* Green background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    padding: 15px 32px;
+    /* Add some padding */
+    text-align: center;
+    /* Center the text */
+    text-decoration: none;
+    /* Remove underline */
+    display: block;
+    /* Make the button inline-block */
+    font-size: 16px;
+    /* Increase font size */
+    margin: 4px 2px;
+    /* Add some margin */
+    cursor: pointer;
+    /* Add a pointer cursor on hover */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+    margin-left: 20px;
+}
+
+.call-button:hover {
+    opacity: 0.7;
+}
+
+
+.service {
+    position: relative;
+    margin-top: 76px;
+    /* padding-top: 50%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 150px 80px;
+
+    border-top: #eb2c2c solid 1px;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+.service .title h2 {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+
+}
+
+.service .title p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+}
+
+.service .title p a {
+    text-decoration: none;
+    color: #eb2c2c;
+}
+
+.service .content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 70px;
+}
+
+.service .subcontent {
+    text-align: center;
+    padding: 0 10px;
+}
+
+.service .subcontent img {
+    width: 250px;
+    /* Kích thước ảnh */
+    height: 250px;
+    /* Kích thước ảnh */
+    border-radius: 50%;
+    /* Tạo viền tròn */
+    overflow: hidden;
+    /* Đảm bảo hình ảnh không bị tràn ra khỏi khung hình */
+    border: 1px #f1ebd8 solid;
+}
+
+
+.service .subcontent h3 {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+    color: #eb2c2c;
+    font-weight: 600;
+
+}
+
+.service .subcontent p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+
+}
+
+.portfolio {
+    padding: 80px 150px 80px;
+    border-top: #eb2c2c solid 1px;
+}
+
+.portfolio .title {
+    text-align: center;
+}
+
+.portfolio .title h2 {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+
+}
+
+.portfolio .title p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.portfolio .title a {
+    text-decoration: none;
+    color: #eb2c2c;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.portfolio .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.portfolio .content .subcontent {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Mỗi phần tử chiếm 1/3 chiều rộng trừ đi khoảng cách */
+    margin: 10px;
+    /* Khoảng cách giữa các phần tử */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.portfolio .content .subcontent img {
+    width: 100%;
+    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của phần tử cha */
+    height: auto;
+    /* Giữ tỷ lệ chiều cao tự động */
+    border-radius: 5px;
+}
+
+.portfolio .content .subcontent p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.about {
+    padding: 80px 150px 80px;
+    background-color: #f8f8f8;
+    border-top: #eb2c2c solid 1px;
+}
+
+.about .heading {
+    text-align: center;
+}
+
+.about .heading h2 {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+
+}
+
+.about .heading p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about .heading .content {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các phần tử con xuống hàng */
+}
+
+.about .heading .content .subcontent {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Mỗi phần tử chiếm 1/3 chiều rộng trừ đi khoảng cách */
+    margin: 10px;
+    /* Khoảng cách giữa các phần tử */
+    /* box-sizing: border-box; */
+    text-align: center;
+}
+
+.about .heading .content .subcontent img {
+    width: 100%;
+    /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của phần tử cha */
+    height: auto;
+    /* Giữ tỷ lệ chiều cao tự động */
+    border-radius: 5px;
+}
+
+.about .heading .content .subcontent p {
+    font-weight: 600;
+}
+
+.about .content .title {
+    text-align: center;
+}
+
+.about .content .title h3 {
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+
+}
+
+.about .content .title p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about .content .title p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #eb2c2c;
+}
+
+.about .content .contain {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.about .content .contain .item {
+    flex: 1;
+    padding: 10px;
+}
+
+.about .content .contain :first-child h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 0;
+}
+
+.about .content .contain :first-child p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px 0;
+}
+
+.content_feedback {
+    display: flex;
+    padding: 5px 0;
+}
+
+.content_feedback span {
+    width: 60%;
+    font-size: 15px;
+}
+
+.content_feedback i {
+    color: antiquewhite;
+}
+
+.content_feedback i.rank {
+    color: #FFCE3E;
+}
+
+.about .content .contain :last-child {
+    text-align: justify;
+    align-items: center;
+}
+
+.about .content .contain :last-child h3 {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.about .content .contain :last-child .call-button {
+    margin: 25px auto;
+}
+
+.clients {
+    padding: 80px 150px 80px;
+    background-color: #f8f8f8;
+    border-top: #eb2c2c solid 1px;
+}
+
+.clients .title h2 {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+}
+
+.clients .title p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.clients .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.client {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    width: calc(33.333% - 40px);
+    /* Ensures 3 clients per row with some gap */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.client .message {
+    display: block;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 14px;
+    /* Increased font size */
+}
+
+.info_client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info_client img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.name_client,
+.adress_client {
+    font-weight: bold;
+    font-size: 14px;
+    /* Increased font size */
+}
+
+.name_client {
+    margin-bottom: 5px;
+}
+
+.service-description {
+    display: block;
+    font-size: 18px;
+    /* Adjust font size */
+    color: #333;
+    /* Text color */
+    background-color: #f9f9f9;
+    /* Background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside the element */
+    margin: 20px 0;
+    /* Margin outside the element */
+    line-height: 1.6;
+    /* Line height for readability */
+    text-align: justify;
+    /* Justified text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    padding: 80px 150px 80px;
+    background-color: #f8f8f8;
+    border-top: #eb2c2c solid 1px;
+}
+
+.contact .title h2 {
+    padding: 15px 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+}
+
+.contact .title p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.contact .content {
+    display: flex;
+}
+
+.contact .content .col {
+    flex: 1;
+}
+
+.contact .content .col form {
+    margin: 0 auto;
+}
+
+.contact .content .col .adress {
+    margin: 50px auto 0;
+    padding: 20px 80px;
+    /* font-size: 15px; */
+}
+
+.contact .content .col .adress span {
+    font-size: 20px;
+}
+
+.contact .content .col .adress ul {
+    margin-top: 10px;
+}
+
+.contact .content .col .adress li a {
+    padding: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-family: "Lato", sans-serif;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.contact .call-button {
+    margin: 35px auto 0;
+}
+
+.contact .social {
+    padding: 35px;
+    text-align: center;
+}
+
+.contact .social a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 6px;
+}
+
+.contact .social p {
+    font-size: 14px;
+    padding: 20px;
+}
+
+.contact .social a .fa-facebook {
+    color: #3a25da;
+}
+
+.contact .social a .fa-instagram {
+    color: #f07a3a;
+}
+
+.contact .social a .fa-tiktok {
+    color: #2b2f2c;
+}
+
+.phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
