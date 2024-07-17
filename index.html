@@ -281,26 +281,25 @@
 
                     <div class="form-group">
                         <!-- <label for="fullname" class="form-label">Tên đầy đủ</label> -->
-                        <input id="fullname" name="fullname" type="text" rules="required" placeholder="* Tên của bạn"
+                        <input id="fullname" name="fullname" type="text" required placeholder="* Tên của bạn ..."
                             class="form-control">
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
                         <!-- <label for="email" class="form-label">Email</label> -->
-                        <input id="email" name="email" type="text" rules="required|email" placeholder="* Email của bạn"
+                        <input id="email" name="email" type="email" required placeholder="* Email của bạn ..."
                             class="form-control">
                         <span class="form-message"></span>
                     </div>
 
                     <div class="form-group">
-                        <!-- <label for="message" class="form-label">Tên đầy đủ</label> -->
-                        <input id="message" name="message" type="text" rules="required" placeholder="Nội dung liên hệ"
-                            class="form-control">
-                        <span class="form-message"></span>
+                        <!-- <label for="message">Nội dung:</label> -->
+                        <textarea id="message" name="message" rows="4" required placeholder="* Nội dung liên hệ ..." class="form-control"></textarea>
+                        
                     </div>
 
-
+                    <input type="hidden" id="submit-time" name="submit-time">
                     <button class="form-submit">Gửi đi</button>
                 </form>
             </div>
@@ -345,13 +344,8 @@
 
     </div>
 
-    <script src="./js/validator.js"></script>
     <script src="./js/main.js"></script>
-    <script>
-        var form = new Validator('#contact-form')
-        form.onSubmit = function (formData) {
-            console.log(formData)
-        }</script>
+    <script src="./js/ggsheet.js"></script>
 
 
 
